@@ -12,7 +12,16 @@
       alert("You asked to call Transportation!");
     }
   </script>
-
+  <script>
+  function myFunction() {
+      var x = document.getElementById("example");
+      if (x.style.display === 'none') {
+          x.style.display = 'block';
+      } else {
+          x.style.display = 'none';
+      }
+  }
+  </script>
 </head>
 <body>
 
@@ -33,15 +42,4 @@
 </div>
 
 </body>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("example");
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
 </html>
