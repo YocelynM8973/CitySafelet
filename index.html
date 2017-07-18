@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
   <script> 
     function callTransportation() {
-      alert("You asked to call Transportation!");
+      alert("You asked to call Transportation! Your ride will be here soon.");
     }
   </script>
   <script>
@@ -41,7 +42,7 @@
   <button type="button" class="btn" onclick="myFunction()">Basic</button>
   </div>
   <div>
-  <button type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
+  <button type="button" class="btn" onclick="()">ALERT EXAMPLE</button>
   </div>
   <div>
 
@@ -56,10 +57,10 @@
   <button type="button" class="btn btn-primary" onclick="callForComplaint()">311</button>
   </div>
   <div>
-  <button type="button" class="btn btn-success">Transit</button> : Provided transportation for disabled/elderly in need
+  <button type="button" class="btn btn-success" onclick="callTransportation()">Transit</button>
   </div>
   <div>
-  <button type="button" class="btn btn-info">Emergency Contact</button>
+  <button type="button" class="btn btn-info" onclick="responsiveVoice.speak('Calling your emergency contact.','US English Female');"">Emergency Contact</button>
   </div>
   <div>
   <button type="button" class="btn btn-warning" style="background-color: GreenYellow">Flashlight</button> 
