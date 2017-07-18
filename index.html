@@ -7,14 +7,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script> 
-    function callTransportation() {
-      alert("You asked to call Transportation!");
-    }
-  </script>
+
+    
   <script>
-    function call911() {
-      alert(":This button allows for users of the bracelet and the application to call 911 in cases of emergency");
+    function alertme(message) {
+      alert(message);
     }
   </script>
   <script>
@@ -49,10 +46,10 @@
 
   </div>
   <div>
-  <button type="button" class="btn btn-danger" onclick="call911()">911</button>
+  <button type="button" class="btn btn-danger" onclick='alertme(":This button allows for users of the bracelet and the application to call 911 in cases of emergency")'>911</button>
   </div>
   <div>
-  <button type="button" class="btn btn-primary" onclick="callForComplaint()">311</button> : Calls 311 to allow the user to file a complaint
+  <button type="button" class="btn btn-primary" onclick="alertme()">311</button> : Calls 311 to allow the user to file a complaint
   </div>
   <div>
   <button type="button" class="btn btn-success">Transit</button> : Provided transportation for disabled/elderly in need
