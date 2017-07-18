@@ -8,7 +8,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    
   <script>
     function alertme(message) {
       alert(message);
@@ -21,7 +20,7 @@
   <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
  <script>
     function callAlert() {
-      alert("You have an alert!");
+      alert("You have an alert! Please check.");
     }
  </script>
 
@@ -72,6 +71,9 @@
   <div>
 
   <button type="button" class="btn btn-danger" onclick='alertme(":Hi. What is your emergency?")'>911</button>
+
+  <button type="button" class="btn" onclick=()">ALERT EXAMPLE</button>
+
   </div>
   <div>
   <button type="button" class="btn btn-primary" onclick="alertme()">311</button> : Calls 311 to allow the user to file a complaint
@@ -79,8 +81,13 @@
   <button type="button" class="btn btn-warning">Alert</button> Alerts based on saftey issues in the area, where residents can come assist.
   </div>
   <div>
+
   <button type="button" class="btn btn-danger">911</button>
   </div>
+
+  <button type="button" class="btn btn-primary" onclick="alertme()">311</button> : Calls 311 to allow the user to file a complaint
+  </div>
+
   <div>
 
   <button type="button" class="btn btn-primary">311</button>
