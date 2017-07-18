@@ -12,9 +12,10 @@
       alert("You asked to call Transportation!");
     }
   </script>
+
   <script>
-  function alertFunction() {
-      var x = document.getElementById("alert");
+  function myFunction() {
+      var x = document.getElementById("example");
       if (x.style.display === 'none') {
           x.style.display = 'block';
       } else {
@@ -27,6 +28,15 @@
 
 <div class="container">
   <h2>Button Styles</h2>
+
+
+
+ 
+  <button type="button" class="btn o>Alert</button>
+  </div>
+  <button type="button" class="btn btn-default">911</button>
+  <input type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
+
   <div>
   <button type="button" class="btn" onclick="myFunction()">Basic</button>
   </div>
@@ -34,27 +44,29 @@
   <button type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
   </div>
   <div>
-  <button type="button" class="btn btn-warning" onclick="alertFunction()">Alert</button> <p id='alert' style="display: none"> Alerts based on saftey issues in the area, where residents can come assist.</p> 
+  <button type="button" class="btn btn-warning">Alert</button> Alerts based on saftey issues in the area, where residents can come assist.
   </div>
   <div>
-  <button type="button" class="btn btn-danger">911</button> : This button allows for users of the bracelet and the application to call 911 in cases of emergency
+  <button type="button" class="btn btn-danger">911</button>
   </div>
   <div>
+
   <button type="button" class="btn btn-primary">311</button>
   </div>
   <div>
-  <button type="button" class="btn btn-success">Transit</button> Provided transportation for disabled/elderly in need
+  <button type="button" class="btn btn-success">Transit</button>
   </div>
   <div>
   <button type="button" class="btn btn-info">Emergency Contact</button>
   </div>
   <div>
   <button type="button" class="btn btn-warning">Flashlight</button>
+
+
+
   </div>
 
 </div>
-<div id="example" style="display: none">
-hello
-</div>
+
 </body>
 </html>
