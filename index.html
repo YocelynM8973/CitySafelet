@@ -19,7 +19,10 @@
 <div class="container">
   <h2>Button Styles</h2>
   <div>
-  <input type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
+  <button type="button" class="btn" onclick="myFunction()">Basic</button>
+  </div>
+  <div>
+  <button type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
   </div>
   <div>
   <button type="button" class="btn btn-warning">Alert</button>
@@ -38,8 +41,26 @@
   </div>
   <div>
   <button type="button" class="btn btn-warning">Flashlight</button>
+<<<<<<< HEAD
   </div>
+=======
+</div>
+<div id="example" style="display: none;">
+<h4>Description</h4>
+<p>hello</p>
+>>>>>>> d438e2eb1e2821230e170d53f8061ecd31e9f25f
 </div>
 
 </body>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("example");
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
 </html>
