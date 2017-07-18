@@ -13,6 +13,16 @@
     }
   </script>
 
+  <script>
+  function myFunction() {
+      var x = document.getElementById("example");
+      if (x.style.display === 'none') {
+          x.style.display = 'block';
+      } else {
+          x.style.display = 'none';
+      }
+  }
+  </script>
 </head>
 <body>
 
@@ -20,15 +30,41 @@
   <h2>Button Styles</h2>
 
 
+
   <button type="button" class="btn ">Basic</button/button>
   <button type="button" class="btn btn-warning">Alert</button>
   <button type="button" class="btn btn-default">911</button>
   <input type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
+
+  <div>
+  <button type="button" class="btn" onclick="myFunction()">Basic</button>
+  </div>
+  <div>
+  <button type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
+  </div>
+  <div>
+  <button type="button" class="btn btn-warning">Alert</button>
+  </div>
+  <div>
+  <button type="button" class="btn btn-danger">911</button>
+  </div>
+  <div>
+
   <button type="button" class="btn btn-primary">311</button>
+  </div>
+  <div>
   <button type="button" class="btn btn-success">Transit</button>
+  </div>
+  <div>
   <button type="button" class="btn btn-info">Emergency Contact</button>
+  </div>
+  <div>
   <button type="button" class="btn btn-warning">Flashlight</button>
 
+
+
+  </div>
+  
 </div>
 
 </body>
