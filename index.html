@@ -13,8 +13,8 @@
     }
   </script>
   <script>
-  function myFunction() {
-      var x = document.getElementById("example");
+  function alertFunction() {
+      var x = document.getElementById("alert");
       if (x.style.display === 'none') {
           x.style.display = 'block';
       } else {
@@ -34,10 +34,10 @@
   <button type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
   </div>
   <div>
-  <button type="button" class="btn btn-warning">Alert</button> : Alerts based on saftey issues in the area, where residents can come assist. 
+  <button type="button" class="btn btn-warning" onclick="alertFunction()">Alert</button> <p id='alert' style="display: none"> Alerts based on saftey issues in the area, where residents can come assist.</p> 
   </div>
   <div>
-  <button type="button" class="btn-danger">911</button> : This button allows for users of the bracelet and the application to call 911 in cases of emergency
+  <button type="button" class="btn btn-danger">911</button> : This button allows for users of the bracelet and the application to call 911 in cases of emergency
   </div>
   <div>
   <button type="button" class="btn btn-primary">311</button> : Calls 311 to allow the user to file a complaint
