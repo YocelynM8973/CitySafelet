@@ -12,7 +12,7 @@
 
 <div class="container">
   <h2>Button Styles</h2>
-  <button type="button" class="btn">Basic</button>
+  <button type="button" class="btn" onclick="myFunction()">Basic</button>
   <button type="button" class="btn btn-default">Default</button>
   <button type="button" class="btn btn-primary">Primary</button>
   <button type="button" class="btn btn-success">Success</button>
@@ -21,6 +21,21 @@
   <button type="button" class="btn btn-danger">Danger</button>
   <button type="button" class="btn btn-link">Link</button>      
 </div>
+<div id="example" style="display: none;">
+<h1>Button Description</h1>
+<p>hello</p>
+</div>
 
 </body>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("example");
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
 </html>
