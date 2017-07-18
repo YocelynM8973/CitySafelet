@@ -6,7 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+  <script>
+    function alertme(message) {
+      alert(message);
+    }
+  </script>
+  <script>
+  function alertFunction() {
+      var x = document.getElementById("alert");
   <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
  <script>
     function callAlert() {
@@ -34,34 +42,19 @@
 
 <div class="container">
   <h2>Button Styles</h2>
-
-
-
-  <button type="button" class="btn ">Basic</button/button>
-  <div
-  <button type="button" class="btn onclick="hello()">Alert</button>
-  </div>
-  <button type="button" class="btn btn-default">911</button>
-  <input type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
-
   <div>
   <button type="button" class="btn" onclick="myFunction()">Basic</button>
   </div>
   <div>
-  <button type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
-
   <button type="button" class="btn btn-warning" onclick="callAlert()">Alert</button>
   </div>
   <div>
-  <button type="button" class="btn btn-warning">Alert</button> Alerts based on saftey issues in the area, where residents can come assist.
+  <button type="button" class="btn btn-danger" onclick='alertme(":This button allows for users of the bracelet and the application to call 911 in cases of emergency")'>911</button>
   </div>
   <div>
-  <button type="button" class="btn btn-danger">911</button>
+  <button type="button" class="btn btn-primary" onclick="alertme()">311</button>
   </div>
-  <div>
-
-  <button type="button" class="btn btn-primary">311</button>
-  </div>
+  
   <div>
   <button type="button" class="btn btn-success">Transit</button>
   </div>
