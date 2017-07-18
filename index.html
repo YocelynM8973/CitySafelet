@@ -12,21 +12,49 @@
       alert("You asked to call Transportation!");
     }
   </script>
-
+  <script>
+  function myFunction() {
+      var x = document.getElementById("example");
+      if (x.style.display === 'none') {
+          x.style.display = 'block';
+      } else {
+          x.style.display = 'none';
+      }
+  }
+  </script>
 </head>
 <body>
 
 <div class="container">
   <h2>Button Styles</h2>
-
-  <input type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
+  <div>
+  <button type="button" class="btn" onclick="myFunction()">Basic</button>
+  </div>
+  <div>
+  <button type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
+  </div>
+  <div>
   <button type="button" class="btn btn-warning">Alert</button>
+<<<<<<< HEAD
   <button type="button" class="btn btn-danger" onlclick= "is this an emergency">911</button>
+=======
+  </div>
+  <div>
+  <button type="button" class="btn btn-danger">911</button>
+  </div>
+  <div>
+>>>>>>> db7c47603d8ff3604f460a7d7ad3a8b936e6e6b2
   <button type="button" class="btn btn-primary">311</button>
+  </div>
+  <div>
   <button type="button" class="btn btn-success">Transit</button>
+  </div>
+  <div>
   <button type="button" class="btn btn-info">Emergency Contact</button>
+  </div>
+  <div>
   <button type="button" class="btn btn-warning">Flashlight</button>
-
+  </div>
 </div>
 
 </body>
