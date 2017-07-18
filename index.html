@@ -18,20 +18,39 @@
 
 <div class="container">
   <h2>Button Styles</h2>
+<<<<<<< HEAD
 
 
   <button type="button" class="btn ">Basic</button/button>
   <button type="button" class="btn btn-warning">Alert</button>
   <button type="button" class="btn btn-default">911</button>
   <input type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
+=======
+  <button type="button" class="btn" onclick="myFunction()">Basic</button>
+  <button type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
+>>>>>>> d438e2eb1e2821230e170d53f8061ecd31e9f25f
   <button type="button" class="btn btn-warning">Alert</button>
   <button type="button" class="btn btn-danger">911</button>
   <button type="button" class="btn btn-primary">311</button>
   <button type="button" class="btn btn-success">Transit</button>
   <button type="button" class="btn btn-info">Emergency Contact</button>
   <button type="button" class="btn btn-warning">Flashlight</button>
-
+</div>
+<div id="example" style="display: none;">
+<h4>Description</h4>
+<p>hello</p>
 </div>
 
 </body>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("example");
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
 </html>
