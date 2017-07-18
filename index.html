@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
 
     
   <script>
@@ -17,6 +18,26 @@
   <script>
   function alertFunction() {
       var x = document.getElementById("alert");
+=======
+<<<<<<< HEAD
+=======
+  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+ <script>
+    function callAlert() {
+      alert("You have an alert!");
+    }
+ </script>
+>>>>>>> dbba66610b6043121e4ec08033f52dc5b6905447
+  <script> 
+    function callTransportation() {
+      alert("You asked to call Transportation!");
+    }
+  </script>
+
+  <script>
+  function myFunction() {
+      var x = document.getElementById("example");
+>>>>>>> 2e7d6992de89da4acfc7687e4aadb2698ecc5e05
       if (x.style.display === 'none') {
           x.style.display = 'block';
       } else {
@@ -24,50 +45,64 @@
       }
   }
   </script>
-  <script>
-  function callForComplaint() {
-    alert("Calling 311")
-  }
-  </script>
 </head>
 <body>
 
 <div class="container">
-  <h2>City Safelet</h2>
+  <h2>Button Styles</h2>
+
+
+
+  <button type="button" class="btn ">Basic</button/button>
+  <div
+  <button type="button" class="btn onclick="hello()">Alert</button>
+  </div>
+  <button type="button" class="btn btn-default">911</button>
+  <input type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
+
   <div>
   <button type="button" class="btn" onclick="myFunction()">Basic</button>
   </div>
   <div>
+<<<<<<< HEAD
   <button type="button" class="btn" onclick="callTransportation()">ALERT EXAMPLE</button>
+=======
+
+  <button type="button" class="btn btn-warning" onclick="callAlert()">Alert</button>
+
+>>>>>>> dbba66610b6043121e4ec08033f52dc5b6905447
   </div>
   <div>
-
-  <button type="button" class="btn btn-warning" onclick="alertFunction()">Alert</button> <p id='alert' style="display: none"> Alerts based on saftey issues in the area, where residents can come assist.</p> 
-
-  </div>
-  <div>
+<<<<<<< HEAD
   <button type="button" class="btn btn-danger" onclick='alertme(":This button allows for users of the bracelet and the application to call 911 in cases of emergency")'>911</button>
   </div>
   <div>
   <button type="button" class="btn btn-primary" onclick="alertme()">311</button> : Calls 311 to allow the user to file a complaint
+=======
+  <button type="button" class="btn btn-warning">Alert</button> Alerts based on saftey issues in the area, where residents can come assist.
   </div>
   <div>
-  <button type="button" class="btn btn-success">Transit</button> : Provided transportation for disabled/elderly in need
+  <button type="button" class="btn btn-danger">911</button>
+>>>>>>> 2e7d6992de89da4acfc7687e4aadb2698ecc5e05
+  </div>
+  <div>
+
+  <button type="button" class="btn btn-primary">311</button>
+  </div>
+  <div>
+  <button type="button" class="btn btn-success">Transit</button>
   </div>
   <div>
   <button type="button" class="btn btn-info">Emergency Contact</button>
   </div>
   <div>
-  <button type="button" class="btn btn-warning" style="background-color: GreenYellow">Flashlight</button> 
-</div>
-<div id="example" style="display: none;">
-<h4>Description</h4>
-<p>hello</p>
-  </div>
-  <div>
+  <button type="button" class="btn btn-warning">Flashlight</button>
+
+
 
   </div>
 
 </div>
+
 </body>
 </html>
