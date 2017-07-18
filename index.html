@@ -13,6 +13,11 @@
     }
   </script>
   <script>
+    function call911() {
+      alert(":This button allows for users of the bracelet and the application to call 911 in cases of emergency");
+    }
+  </script>
+  <script>
   function alertFunction() {
       var x = document.getElementById("alert");
       if (x.style.display === 'none') {
@@ -40,15 +45,11 @@
   </div>
   <div>
 
-
-
-
-
   <button type="button" class="btn btn-warning" onclick="alertFunction()">Alert</button> <p id='alert' style="display: none"> Alerts based on saftey issues in the area, where residents can come assist.</p> 
 
   </div>
   <div>
-  <button type="button" class="btn btn-danger">911</button>
+  <button type="button" class="btn btn-danger" onclick="call911()">911</button>
   </div>
   <div>
   <button type="button" class="btn btn-primary" onclick="callForComplaint()">311</button> : Calls 311 to allow the user to file a complaint
@@ -59,7 +60,8 @@
   </div>
   <div>
   <button type="button" class="btn btn-info">Emergency Contact</button>
-
+  </div>
+  <div>
   <button type="button" class="btn btn-warning" style="background-color: GreenYellow">Flashlight</button> 
 </div>
 <div id="example" style="display: none;">
