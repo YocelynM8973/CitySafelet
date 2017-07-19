@@ -114,35 +114,34 @@
   </div>
     <script>
       function initMap() {
-        var gowanusCenter = {lat: 40.694442, lng: -73.984401}
+        var gowanusCenter = {lat: 40.694442, lng: -73.984401};
         var map911 = new google.maps.Map(document.getElementById('map911'), {
           zoom: 13,
           center: gowanusCenter
         });
 
-        var point2 = {lat: 40.6839339148868, lng: -73.9822973864866}
+        var point2 = {lat: 40.6839339148868, lng: -73.9822973864866};
+        var point311v3 = {lat:40.691800, lng: -73.989925};
         var map311 = new google.maps.Map(document.getElementById('map311'), {
           zoom: 13,
           center: gowanusCenter
         });
-        var contentString="911 Data will be place at this location:"
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
+        makeMarker(map911, gowanusCenter, "911 call", "911 Data will be place at this location:");
 
-        makeMarker(map911, gowanusCenter,"911 Data will be place at this location:" ,infowindow);
-
-makeMarker(map311, point2);
+        makeMarker(map311, gowanusCenter, "Complaint", "Pothole in road");
+        makeMarker(map311, point2, "Complaint2", "No hot water");
+        makeMarker(map311, point311v3, "Complaint3", "You have found the hidden egg, would you care to open in?");
 
       }
 
-
-
-      function makeMarker(map, position,title,infowindow){
+      function makeMarker(map, position, title, message){
         var marker = new google.maps.Marker({
           position: position,
           map: map,
           animation: google.maps.Animation.DROP,
+        });
+        var infowindow = new google.maps.InfoWindow({
+          content: message
         });
         marker.addListener('click', function() {
           infowindow.open(map, marker);
