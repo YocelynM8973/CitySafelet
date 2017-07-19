@@ -114,23 +114,21 @@
   </div>
     <script>
       function initMap() {
-        var gowanusCenter = {lat: 40.694473, lng: -73.984460}
+        var gowanusCenter = {lat: 40.694442, lng: -73.984401}
         var map911 = new google.maps.Map(document.getElementById('map911'), {
-          zoom: 15,
+          zoom: 13,
           center: gowanusCenter
         });
 
         var point2 = {lat: 40.6839339148868, lng: -73.9822973864866}
         var map311 = new google.maps.Map(document.getElementById('map311'), {
-          zoom: 15,
+          zoom: 13,
           center: gowanusCenter
         });
 
-        makeMarker(map311, gowanusCenter);
         makeMarker(map911, gowanusCenter);
 
 makeMarker(map311, point2);
-        var point2 = {lat: 40.6839339148868, lng: -73.9822973864866}
 
       }
 
