@@ -76,19 +76,25 @@
         </div>
     <script>
       function initMap() {
-        var uluru = {lat: 40.673, lng: -73.997}
+        var gowanusCenter = {lat: 40.673, lng: -73.997}
         var map911 = new google.maps.Map(document.getElementById('map911'), {
           zoom: 15,
-          center: uluru
-        });     
+          center: gowanusCenter
+        });
+
         var map311 = new google.maps.Map(document.getElementById('map311'), {
           zoom: 15,
-          center: uluru
+          center: gowanusCenter
         });
 
         var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+          position: gowanusCenter,
+          map: map311
+        });
+
+        var marker = new google.maps.Marker({
+          position: gowanusCenter,
+          map: map911
         });
       }
     </script>
