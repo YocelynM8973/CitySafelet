@@ -11,17 +11,22 @@
     <style>
       #map911 {
         height: 400px;
-        width: 100%;
-       }
-    </style>
-    
-        <style>
+        width: 550px;
+    position: relative;
+float:left;}
+
+
       #map311 {
         height: 400px;
-        width: 100%;
-       }
-    </style>
-    <style>
+        width: 550px;
+       position: relative;
+       float:right;}
+ #container {
+ width:1200px;
+ margin-right: auto;
+ margin-left: auto;
+ height: auto;
+}
   ul {
       list-style-type: none;
       margin: 0;
@@ -57,11 +62,15 @@
   </div>
   <br>
   <div>
+
+  <div id="container">
+
     <h3>GOWANUS MAP 911</h3>
     <div id="map911"></div>
 
         <h3>GOWANUS MAP 311</h3>
         <div id="map311"></div>
+        </div>
     <script>
       function initMap() {
         var uluru = {lat: 40.673, lng: -73.997}
