@@ -7,8 +7,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-<<<<<<< HEAD
-=======
       #titleblock {
         display: block;
         width:100%;
@@ -39,33 +37,26 @@
         text-align:center;
       }
 
->>>>>>> 940d841e87716f76eb36d51c413f56faa141e55b
       #map911 {
         height: 400px;
-        width: 550px;
+        width: 48%;
         position: relative;
         float:left;
-<<<<<<< HEAD
-=======
         display:inline;
         margin-left: 10px;
->>>>>>> 940d841e87716f76eb36d51c413f56faa141e55b
       }
 
       #map311 {
         height: 400px;
-        width: 550px;
+        width: 48%;
         position: relative;
         float:right;
-<<<<<<< HEAD
-=======
         display: inline;
         margin-right: 10px;
->>>>>>> 940d841e87716f76eb36d51c413f56faa141e55b
       }
 
       #container {
-        width:1200px;
+        width:100%;
         margin-right: auto;
         margin-left: auto;
         height: auto;
@@ -105,8 +96,6 @@
   </ul>
   </div>
   <br>
-<<<<<<< HEAD
-=======
   <div id="titleblock">
     <div id="map911div">
       <h3 class="maptitle">GOWANUS MAP 911</h3>
@@ -115,17 +104,14 @@
       <h3 class="maptitle">GOWANUS MAP 311</h3>
     </div>
     </div>
->>>>>>> 940d841e87716f76eb36d51c413f56faa141e55b
   <div>
 
   <div id="container">
 
-    <h3>GOWANUS MAP 911</h3>
     <div id="map911"></div>
 
-        <h3>GOWANUS MAP 311</h3>
-        <div id="map311"></div>
-        </div>
+    <div id="map311"></div>
+  </div>
     <script>
       function initMap() {
         var gowanusCenter = {lat: 40.694513, lng: -73.984610}
@@ -142,12 +128,12 @@
 
         var marker = new google.maps.Marker({
           position: gowanusCenter,
-          map: map311
+          map: map311,
         });
 
-        var marker = new google.maps.Marker({
+        var marker2 = new google.maps.Marker({
           position: gowanusCenter,
-          map: map911
+          map: map911,
         });
       }
     </script>
