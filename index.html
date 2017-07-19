@@ -54,6 +54,30 @@
           x.style.display = 'none';
       }
   }
+
+  var updateCounter = 1;
+  function update(){
+    if (updateCounter == 1) {
+          responsiveVoice.speak('Next town Hall meeting is in an hour at 5pm.');
+          updateCounter = updateCounter + 1;
+    } else  if (updateCounter== 2) {
+        responsiveVoice.speak('Please press the transport button');
+        updateCounter = updateCounter - 1;
+
+    }
+  }
+
+  var transportCounter = 1;
+  function transport(){
+    if (transportCounter == 1) {
+          responsiveVoice.speak('Would you like transportation to the next town hall meeting?');
+          transportCounter = transportCounter + 1;
+    } else  if (transportCounter== 2) {
+        responsiveVoice.speak('The shuttle buss will pick you up at your current location of 11 Times Square at 4 pm');
+        transportCounter = transportCounter - 1;
+
+    }
+  }
   </script>
   <style>
   ul {
@@ -109,7 +133,7 @@
   </div>
   <br>
   <div>
-  <button type="button" style="width:150px;height:50px;" class="btn btn-success" onclick="callTransportation()">Transit</button>
+  <button type="button" style="width:150px;height:50px;" class="btn btn-success" onclick="transport()">Transit</button>
   </div>
   <br>
   <div>
@@ -121,7 +145,7 @@
   </div>
   <br>
   <div>
-  <button type="button" style="width:150px;height:50px;" class="btn btn-success" onclick="responsiveVoice.speak('Next town Hall meeting is next week at 5pm.', 'US English Female')">Update</button>
+  <button type="button" style="width:150px;height:50px;" class="btn btn-success" onclick="update()">Update</button>
   </div>
 
 
