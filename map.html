@@ -98,10 +98,10 @@
   <br>
   <div id="titleblock">
     <div id="map911div">
-      <h3 class="maptitle">GOWANUS MAP 911</h3>
+      <h3 class="maptitle"> Map of 911 Calls in Gowanus</h3>
     </div>
     <div id="map311div">
-      <h3 class="maptitle">GOWANUS MAP 311</h3>
+      <h3 class="maptitle">Map of 311 Calls in Gowanus</h3>
     </div>
     </div>
   <div>
@@ -126,14 +126,16 @@
           center: gowanusCenter
         });
 
-        var marker = new google.maps.Marker({
-          position: gowanusCenter,
-          map: map311,
-        });
+        makeMarker(map311, gowanusCenter);
+        makeMarker(map911, gowanusCenter);
 
-        var marker2 = new google.maps.Marker({
-          position: gowanusCenter,
-          map: map911,
+      }
+
+      function makeMarker(position, map) {
+        var marker = new google.maps.Marker({
+          position: position,
+          map: map,
+          animation: google.maps.Animation.DROP,
         });
       }
     </script>
