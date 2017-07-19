@@ -78,6 +78,30 @@
 
     }
   }
+  
+  var infoCounter = 1;
+  function info(){
+    if (infoCounter == 1) {
+          responsiveVoice.speak('would you like to file a complaint');
+          infoCounter = infoCounter + 1;
+    } else  if (infoCounter== 2) {
+        responsiveVoice.speak('The same complaint of... no hot water... has been filed in your area. We are working to fix your problem.');
+        infoCounter = infoCounter - 1;
+
+    }
+  }
+
+  var on = false;
+    function onOff() {
+      if (on == false){
+        document.getElementById("demo").style.boxShadow= "30px 15px 30px yellow";
+        on = true;
+      } else {
+        document.getElementById("demo").style.boxShadow= "none";
+        on = false;
+      }
+    }
+
   var emergencyCounter = 1;
   function emergency(){
     if (emergencyCounter == 1) {
@@ -137,7 +161,7 @@
   </div>
   <br>
   <div>
-  <button type="button" style="width:150px;height:50px;" class="btn btn-primary" onclick='alertme("Calling 311...")'>311</button> 
+  <button type="button" style="width:150px;height:50px;" class="btn btn-primary" onclick='info()'>311</button> 
   </div>
   <br>
   <div>
@@ -153,7 +177,7 @@
   </div>
   <br>
   <div>
-  <button type="button" style="width:150px;height:50px;" class="btn btn-warning" onclick='alertme("Would you like to turn on the flashlight?")'>Flashlight</button>
+  <button type="button" id="demo" style="width:150px;height:50px;" class="btn btn-warning" onclick="onOff()">Flashlight</button>
   </div>
   <br>
   <div>
