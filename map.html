@@ -125,7 +125,16 @@
           zoom: 13,
           center: gowanusCenter
         });
-        makeMarker(map911, gowanusCenter, "911 call", "911 Data will be place at this location:");
+        makeMarker(map911, gowanusCenter, "911 call", "A gowanus resident had a car accident:");
+
+                var point2 = {lat: 40.675186, lng: -73.988657}
+        var map311 = new google.maps.Map(document.getElementById('map311'), {
+          zoom: 13,
+          center: gowanusCenter
+        });
+
+        makeMarker(map911,point2, "911 call","Fire in a Gowanus residence");
+
 
         makeMarker(map311, gowanusCenter, "Complaint", "Pothole in road");
         makeMarker(map311, point2, "Complaint2", "No hot water");
@@ -143,7 +152,9 @@
         });
         marker.addListener('click', function() {
           infowindow.open(map, marker);
+
         });
+
 
       }
     </script>
