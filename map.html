@@ -9,22 +9,56 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
+      #titleblock {
+        display: block;
+        width:100%;
+        height: 60px;
+      }
+
+      #map911div {
+        width: 50%;
+        height: auto;
+        display:inline;
+        margin: auto;
+      }
+
+      #map311div {
+        width: 50%;
+        height: auto;
+        display:inline;
+        margin: auto;
+      }
+
+      #title911 {
+        position:relative;
+        float: left;
+        text-align:center;
+      }
+
+      #title311 {
+        position: relative;
+        float: right;
+        text-align:center;
+      }
+
       #map911 {
         height: 400px;
-        width: 550px;
+        width: 48%;
         position: relative;
         float:left;
+        display:inline;
       }
 
       #map311 {
         height: 400px;
-        width: 550px;
+        width: 48%;
         position: relative;
         float:right;
+        display: inline;
       }
 
       #container {
-        width:1200px;
+        width:100%;
         margin-right: auto;
         margin-left: auto;
         height: auto;
@@ -64,16 +98,20 @@
   </ul>
   </div>
   <br>
+  <div id="titleblock">
+    <div id="map911div">
+      <h3 id="title911">GOWANUS MAP 911</h3>
+    </div>
+    <div id="map311div">
+      <h3 id="title311">GOWANUS MAP 311</h3>
+    </div>
+    </div>
   <div>
 
-  <div id="container">
-
-    <h3>GOWANUS MAP 911</h3>
-    <div id="map911"></div>
-
-        <h3>GOWANUS MAP 311</h3>
-        <div id="map311"></div>
-        </div>
+    <div id="container">
+      <div id="map911"></div>
+      <div id="map311"></div>
+    </div>
     <script>
       function initMap() {
         var gowanusCenter = {lat: 40.673, lng: -73.997}
