@@ -41,11 +41,40 @@
       }
   }
   </script>
+  <style>
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+  }
+
+  li {
+      float: left;
+  }
+
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  li a:hover {
+      background-color: #111;
+  }
+  </style>
 </head>
 <body>
 
-  <h2><a href="about.html">About</a> </h2>
- 
+
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="map.html">Maps</a></li>
+</ul>
 
 <div class="container">
   <h2>City Safelet</h2>
@@ -59,7 +88,7 @@
   <button type="button" class="btn btn-warning" onclick="callAlert()">Alert</button>
   </div>
   <div>
-  <button type="button" class="btn btn-primary" onclick='alertme("Calls 311 to allow user to file a complaint")'>311</button> 
+  <button type="button" class="btn btn-primary" onclick='alertme("Calling 311...")'>311</button> 
   </div>
   <div>
   <button type="button" class="btn btn-danger" onclick='alertme("Hi. What is your emergency?")'>911</button>
@@ -71,7 +100,7 @@
   <button type="button" class="btn btn-info"onclick='alertme("Who would you like to contact?")''>Emergency Contact</button>
   </div>
   <div>
-  <button type="button" class="btn btn-warning" onclick='alertme("The user will be able to use this button anytime they are walking in dark areas?")'>Flashlight</button>
+  <button type="button" class="btn btn-warning" onclick='alertme("Would you like to turn on the flashlight?")'>Flashlight</button>
 
 
 
