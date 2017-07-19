@@ -125,8 +125,12 @@
           zoom: 13,
           center: gowanusCenter
         });
+        var contentString="911 Data will be place at this location:"
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
 
-        makeMarker(map911, gowanusCenter);
+        makeMarker(map911, gowanusCenter,"911 Data will be place at this location:" ,infowindow);
 
 makeMarker(map311, point2);
 
@@ -134,12 +138,16 @@ makeMarker(map311, point2);
 
 
 
-      function makeMarker(map, position) {
+      function makeMarker(map, position,title,infowindow){
         var marker = new google.maps.Marker({
           position: position,
           map: map,
           animation: google.maps.Animation.DROP,
         });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
       }
     </script>
     <script async defer
