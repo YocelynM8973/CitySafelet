@@ -18,6 +18,9 @@
         height: auto;
         display:inline;
         margin: auto;
+        position:relative;
+        float: left;
+
       }
 
       #map311div {
@@ -25,17 +28,12 @@
         height: auto;
         display:inline;
         margin: auto;
-      }
-
-      #title911 {
-        position:relative;
-        float: left;
-        text-align:center;
-      }
-
-      #title311 {
         position: relative;
         float: right;
+
+      }
+
+      .maptitle {
         text-align:center;
       }
 
@@ -45,6 +43,7 @@
         position: relative;
         float:left;
         display:inline;
+        margin-left: 10px;
       }
 
       #map311 {
@@ -53,6 +52,7 @@
         position: relative;
         float:right;
         display: inline;
+        margin-right: 10px;
       }
 
       #container {
@@ -98,10 +98,10 @@
   <br>
   <div id="titleblock">
     <div id="map911div">
-      <h3 id="title911">GOWANUS MAP 911</h3>
+      <h3 class="maptitle">GOWANUS MAP 911</h3>
     </div>
     <div id="map311div">
-      <h3 id="title311">GOWANUS MAP 311</h3>
+      <h3 class="maptitle">GOWANUS MAP 311</h3>
     </div>
     </div>
   <div>
