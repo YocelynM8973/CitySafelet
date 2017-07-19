@@ -125,24 +125,22 @@
           zoom: 13,
           center: gowanusCenter
         });
-        var contentString="911 Data will be place at this location:"
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
 
-        makeMarker(map911, gowanusCenter,"911 Data will be place at this location:" ,infowindow);
+        makeMarker(map911, gowanusCenter, "911 call", "911 Data will be place at this location:");
 
-makeMarker(map311, point2);
+        makeMarker(map311, gowanusCenter, "Complaint", "Pothole in road");
+        makeMarker(map311, point2, "Complaint2", "No hot water");
 
       }
 
-
-
-      function makeMarker(map, position,title,infowindow){
+      function makeMarker(map, position, title, message){
         var marker = new google.maps.Marker({
           position: position,
           map: map,
           animation: google.maps.Animation.DROP,
+        });
+        var infowindow = new google.maps.InfoWindow({
+          content: message
         });
         marker.addListener('click', function() {
           infowindow.open(map, marker);
