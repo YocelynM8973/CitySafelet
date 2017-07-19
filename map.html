@@ -9,7 +9,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-      #map {
+      #map911 {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+    
+        <style>
+      #map311 {
         height: 400px;
         width: 100%;
        }
@@ -50,15 +57,23 @@
   </div>
   <br>
   <div>
-    <h3>GOWANUS MAP</h3>
-    <div id="map"></div>
+    <h3>GOWANUS MAP 911</h3>
+    <div id="map911"></div>
+
+        <h3>GOWANUS MAP 311</h3>
+        <div id="map311"></div>
     <script>
       function initMap() {
         var uluru = {lat: 40.673, lng: -73.997}
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var map911 = new google.maps.Map(document.getElementById('map911'), {
+          zoom: 15,
+          center: uluru
+        });     
+        var map311 = new google.maps.Map(document.getElementById('map311'), {
           zoom: 15,
           center: uluru
         });
+
         var marker = new google.maps.Marker({
           position: uluru,
           map: map
@@ -72,3 +87,4 @@
 </div>
 </body>
 </html>
+
