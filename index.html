@@ -4,6 +4,8 @@
   <title>Welcome to City Safelet</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <audio id="play" src="http://www.soundjay.com/button/beep-07.wav"></audio>
+  <audio id="play2" src="http://www.soundjay.com/button/beep-07.wav"></audio>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -12,6 +14,17 @@
     function alertme(message) {
       alert(message);
     }
+  </script>
+  <script>
+  function playsound() {
+    //for(beep = 2; beep < 0; beep--){
+     var beep = document.getElementById('play');
+     beep.play(); 
+     beep.play();
+     //document.getElementById('play2').play();
+     //document.getElementById('play').play();
+    //}
+  }
   </script>
   <script>
   function alertFunction() {
@@ -83,7 +96,7 @@
   </p>
   <br>
   <div>
-  <button type="button" style="width:150px;height:50px;" class="btn btn-warning" onclick="callAlert()">Alert</button>
+  <button type="button" style="width:150px;height:50px;" class="btn btn-warning" onclick="playsound();">Alert</button>
   </div>
   <br>
   <div>
