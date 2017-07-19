@@ -78,6 +78,17 @@
 
     }
   }
+
+  var on = false;
+    function onOff() {
+      if (on == false){
+        document.getElementById("demo").style.boxShadow= "10px 10px 5px yellow";
+        on = true;
+      } else {
+        document.getElementById("demo").style.boxShadow= "none";
+        on = false;
+      }
+    }
   </script>
   <style>
   ul {
@@ -141,7 +152,7 @@
   </div>
   <br>
   <div>
-  <button type="button" style="width:150px;height:50px;" class="btn btn-warning" onclick='alertme("Would you like to turn on the flashlight?")'>Flashlight</button>
+  <button type="button" id="demo" style="width:150px;height:50px;" class="btn btn-warning" onclick="onOff()">Flashlight</button>
   </div>
   <br>
   <div>
